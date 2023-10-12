@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter temperature"
+        android:inputType="numberDecimal"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/cToFButton"
+        android:layout_width="242dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/inputEditText"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="C to F"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/fToCButton"
+        android:layout_width="242dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/cToFButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="F to C"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fToCButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text=""
+        android:textSize="40dp" />
+</RelativeLayout>
